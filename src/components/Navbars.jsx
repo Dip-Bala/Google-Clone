@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import {Search} from "./Search";
 
-function Navbar(props) {
+export const Navbars = (props) => {
   return (
     <div className = "navbar-container">
       <div className = "navbar-content">
@@ -10,13 +11,10 @@ function Navbar(props) {
             Google 🔎
           </p>
         </Link>
-        <button type="button" onClick = {props.handleClick}
-        className = "bg-white p-3 "> {props.theme? '💡 Light' : '🌙 Dark'}</button>
+        <Search/>
+        <button type="button" onClick = {props.handleClick}> {props.theme? '💡 Light' : '🌙 Dark'}</button>
       </div>
 
     </div>
-  );
+  )
 }
-
-export default Navbar
-
