@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    padding:2rem;
+    justify-content: space-between;
+    border-bottom: 1px bold black;
+    background-color: gray;
+}
+.navbar-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-logo{
+    font-size: 3rem;
+    color:white;
+    font-weight: bold;
+}
+.navbar-content button{
+    padding:0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1.5rem;
+}
