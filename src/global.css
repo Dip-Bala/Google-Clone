@@ -32,10 +32,41 @@
     background-color: #ecfeff;
     border: 2px solid black;
 }
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .footer{
     border-top:2px solid #e2e8f0;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding:3rem;
+
+}
+
+.search-result-container{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    margin: 2% 3%;
+    gap: 1rem;
+    flex-wrap: wrap; 
+    max-height: 150vh;
+}
+.search-results{
+    background-color: #99f6e4;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    border: 1.5px solid black;
+    padding:1rem;
+}
+
+.results a p:nth-child(1){
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:#082f49;
 }

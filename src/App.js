@@ -8,7 +8,7 @@ function App() {
   return (
     <div className = {darkTheme? 'dark' : ''}>
 
-      <div className = "bg-white dark:bg-slate-400 dark:text-gray-900 min-h-screen">
+      <div className = "bg-white dark:bg-slate-700 dark:text-gray-900 min-h-screen">
         <Navbars 
         theme = {darkTheme}
         handleClick={()=> setDarkTheme(!darkTheme)}/>
