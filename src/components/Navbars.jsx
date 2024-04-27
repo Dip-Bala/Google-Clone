@@ -11,10 +11,9 @@ export const Navbars = (props) => {
             Google 🔎
           </p>
         </Link>
-        <Search/>
         <button type="button" className="text-xl bg-cyam-300 dark:bg-cyam-200 dark:text-gray-900 bg-white border-2 border-black px-3 py-1 hover:shadow-lg" onClick = {props.handleClick}> {props.theme? '💡 Light' : '🌙 Dark'} </button>
       </div>
-
+      <Search/>
     </div>
   )
 }

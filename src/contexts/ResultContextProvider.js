@@ -12,7 +12,7 @@ export const ResultContextProvider = ({ children }) => {
   // Define state variables
   const [results, setResults] = useState([]); // State variable to store search results
   const [loading, setLoading] = useState(false); // State variable to track loading state
-  const [searchTerm, setSearchTerm] = useState('Vincenzo'); // State variable to store search term
+  const [searchTerm, setSearchTerm] = useState(''); // State variable to store search term
 
   // Function to fetch search results from the API
   const getResults = async (url) => {
@@ -24,7 +24,7 @@ export const ResultContextProvider = ({ children }) => {
       const response = await axios.get(`${baseUrl}${url}`, {
         // Pass necessary headers for accessing the API
         headers: {
-          'X-RapidAPI-Key': '3ed130e713msh27527fef4eef722p179393jsnd82c45bd092a',
+          'X-RapidAPI-Key': '36972bb772msh35b4eeb6213d4aep180115jsn801c3f1cc9d9',
           'X-RapidAPI-Host': 'google-search72.p.rapidapi.com'
         },
       });

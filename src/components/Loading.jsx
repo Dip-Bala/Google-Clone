@@ -2,7 +2,8 @@ import React from 'react';
 import { ColorRing } from "react-loader-spinner";
 export const Loading = () => {
     return (
-        <ColorRing className = "loader"
+        <div className="flex justify-center items-center ">
+            <ColorRing 
             visible={true}
             height="80"
             width="80"
@@ -11,5 +12,6 @@ export const Loading = () => {
             wrapperClass="color-ring-wrapper"
             colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
         />
+        </div>
     )
 }
